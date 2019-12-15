@@ -1,0 +1,113 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl,
+dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+main {
+  display: flex;
+}
+
+@font-face {
+    font-family: 'scribble_boxregular';
+    src: url('./assets/fonts/scribble_box/scribbleboxdemo-gywq-webfont.woff2') format('woff2'),
+         url('./assets/fonts/scribble_box/scribbleboxdemo-gywq-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main-title {
+  font-family: 'scribble_boxregular';
+  font-size: 50px;
+  word-spacing: 20px;
+  padding: 15px;
+  text-align: center;
+}
+
+.sub-title {
+  color: white;
+  padding-bottom: 5px;
+}
+
+.items-column {
+  text-align: center;
+  width: 30%;
+}
+
+.slides {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.slides-container {
+  background-color: #487AB9;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 10px;
+  width: 250px;
+  align-items: center;
+}
+
+.item-slide {
+  width: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+  scroll-snap-align: center;
+}
+
+.background-square {
+  height: 75px;
+  width: 141px;
+  position: relative;
+  background-color: #F6EC5F;
+  left: 54px;
+  bottom: 50px;
+  z-index: 0;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5), -2px -2px 10px rgba(0,0,0,0.5);
+  border-radius: 3px;
+}
+
+.item {
+  height: 50px;
+  display: inline-block;
+  position: relative;
+  top: 16px;
+  z-index: 10;
+}
+
+.clothes span img {
+  height: 90px;
+  position: relative;
+  top: -15px;
+}
+
+.clothes span div {
+  bottom: 90px;
+}
+
+.slide-link {
+  text-decoration: none;
+  background-color: #DD4F40;
+  color: white;
+  border-radius: 100%;
+  padding: 3px 8px;
+}
+
+/*
+Middle section
+*/
+
+.name-and-save-outfit {
+  align-items: center;
+}
